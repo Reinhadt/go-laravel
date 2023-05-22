@@ -22,7 +22,7 @@ func initApplication() *application {
 	}
 
 	cel.AppName = "myapp"
-	cel.Debug = true
+	cel.InfoLog.Println("debug is :", cel.Debug)
 	app := &application{
 		App: cel,
 	}
